@@ -10,7 +10,7 @@
     "default_popup": "browserAction.html"
   },
 
-  BROWSER_SPECIFIC_SETTINGS,
+  TARGET_SPECIFIC_SETTINGS,
 
   "commands": {
     "nvimify": {

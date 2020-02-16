@@ -5,6 +5,8 @@ import { confReady, getConf } from "./utils/configuration";
 import { computeSelector } from "./utils/CSSUtils";
 import { getEditor } from "./editors/editors";
 
+console.log("content");
+
 if (document.location.href === "https://github.com/glacambre/firenvim/issues/new") {
     addEventListener("load", autofill);
 }

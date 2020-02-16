@@ -6,6 +6,8 @@ import { confReady, getConfForUrl } from "./utils/configuration";
 import { addModifier, nonLiteralKeys, translateKey } from "./utils/keys";
 import { getCharSize, getGridSize, isFirefox, toFileName } from "./utils/utils";
 
+console.log("iframe");
+
 const locationPromise = page.getEditorLocation();
 const connectionPromise = browser.runtime.sendMessage({ funcName: ["getNewNeovimInstance"] });
 const settingsPromise = browser.storage.local.get("globalSettings");

@@ -18,6 +18,8 @@ import * as browser from "webextension-polyfill";
 import { ISiteConfig } from "./utils/configuration";
 import { getIconImageData, IconKind } from "./utils/utils";
 
+console.log("background");
+
 // We can't use the sessions.setTabValue/getTabValue apis firefox has because
 // chrome doesn't support them. Instead, we create a map of tabid => {} kept in
 // the background. This has the disadvantage of not surviving browser restarts,
